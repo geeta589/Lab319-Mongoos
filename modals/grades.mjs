@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const gradeSchema = new mongoose.Schema({
   class_id: {
     type: Number,
@@ -8,5 +7,4 @@ const gradeSchema = new mongoose.Schema({
   learner_id: { type: Number, required: true },
   scores: [{ score_type: String, score: Number }],
 });
-
-export default mongoose.model("Grade", gradeSchema);
+export default mongoose.model("grades", gradeSchema);
